@@ -1,0 +1,128 @@
+/*Overall style*/
+* {
+  font-family: "Pangolin", cursive;
+}
+
+body {
+  padding: 15px;
+  margin-top: -80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(
+    to right,
+    rgb(255, 151, 255),
+    rgba(143, 255, 255, 0.829)
+  );
+}
+
+/*Title style*/
+.title-div {
+  text-align: center;
+  font-size: 50px;
+}
+h1 {
+  background: linear-gradient(
+    to right,
+    violet,
+    indigo,
+    blue,
+    green,
+    yellow,
+    orange,
+    red,
+    red
+  );
+  background-clip: text;
+  -webkit-background-clip: text; /* For older WebKit-based browsers */
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.1px rgb(0, 0, 0);
+}
+
+/*Buttons style*/
+.buttons {
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  height: 80px;
+  justify-content: space-evenly;
+  margin-top: -90px;
+  margin-bottom: -30px;
+}
+.buttons * {
+  background-color: #ffffff;
+  font-family: "Arvo", serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.6;
+  margin: 10px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  border: 3px solid #000000;
+  outline: none;
+}
+.buttons #clear-button:hover {
+  background-color: #c5c5c5;
+}
+.buttons #black-button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+.buttons #rgb-button:hover {
+  background: linear-gradient(
+    to right,
+    rgb(245, 79, 143),
+    rgb(118, 250, 140),
+    rgb(75, 115, 245)
+  );
+}
+
+/*Text and slider style*/
+.canvasSizeDiv {
+  font-size: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -20px;
+}
+
+#canvasSize {
+  background: rgb(255, 255, 255);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  border: 3px solid #000000;
+  outline: none;
+}
+
+#canvasSize::-webkit-slider-thumb {
+  width: 30px;
+  height: 30px;
+  background: rgb(0, 0, 0);
+  border-radius: 5px;
+  -webkit-appearance: none;
+}
+
+/*Scripted canvas style*/
+.canvasGrid {
+  margin-top: 10px;
+  height: 600px;
+  width: 600px;
+  display: inline-grid;
+  grid-template-columns: repeat(16, 2fr);
+  grid-template-rows: repeat(16, 2fr);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
+}
+
+.pixel {
+  background-color: white;
+  border: 1px solid rgb(235, 235, 235);
+}
+
+/*Footer style*/
+footer {
+  font-size: 20px;
+}

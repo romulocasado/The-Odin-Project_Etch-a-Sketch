@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo&family=Pangolin&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+<body>
+    <div class="title-div">
+      <h1 id="title">Etch-a-Sketch</h1>
+    </div>
+    <div class="buttons">
+      <button id="clear-button">Clear</button>
+      <button id="black-button">Black</button>
+      <button id="rgb-button">RGB</button>
+    </div>  
+    <div class="canvasSizeDiv">
+      <p>CANVAS SCALE = <b class="scaleValue">32</b></p>
+      <input type="range" min="2" max="100" value="32" id="canvasSize">
+    </div>
+    <div class="canvasGrid" id="canvasGrid"></div>
+    <br>
+    <footer><b>Designed by:</b> <a
+            href="https://github.com/romulocasado"
+            target="_blank"
+            id="github-icon"
+            ><i class="fab fa-github-square"></i
+          ></a> Rômulo Cavalcanti</a></footer>
+
+</body>
+</html>
